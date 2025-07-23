@@ -1,0 +1,608 @@
+
+  body{
+    background: url('images/Backgroundbanner.jpg') fixed no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+  }
+  .loader{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    z-index: 1000;
+  }
+  .loader img{
+  width: auto;
+  height: auto;
+  position: absolute;
+  }
+#mainNavbar {
+
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  position: fixed;
+}
+.navbar-collapse {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin: auto;
+}
+
+.navbar-nav >li> div{
+  padding: 20px 15px;
+  font-weight: bold;
+  color: white ;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu > li > a {
+  color: black ;
+  padding: 10px 20px;
+}
+.dropdown-menu > li > a:hover {
+  color: skyblue;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+li > div > a {
+  color: white;
+  text-decoration: none;
+}
+li > div > a:hover {
+  color: white;
+  text-decoration: none;
+}
+.top-banner {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 15% ;
+  z-index: 2;
+}
+.carousel-caption {
+  position: static;
+  text-align: left;
+  color: white;
+  max-width: 80%;
+  padding: 0;
+
+}
+.carousel-caption h1 {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  margin: 0px 0px 25px;
+  font-size: 60px;
+  
+}
+.carousel-caption strong{
+  color: #1CB9C8;
+}
+.carousel-caption p{
+  font: 16px Roboto, sans-serif;
+  margin: 0px 0px 15px;
+  padding: 0px 187.5px 0px 0px;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid white;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.story {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding: 100px 0px;
+
+}
+.ima{
+  padding: 0px 15px;
+}
+.subHeading {
+  color: #1CB9C8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.mainHead {
+  color: #232323;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+.desc {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+.button2 {
+  background-color: white;
+  color: #1CB9C8;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #1CB9C8;
+
+}
+.section {
+  padding: 100px 0;
+  background-color:white;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #232323;
+  margin: -5px 0px 25px;
+  
+}
+
+.sectionText {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.testimonial .memName {
+  font-weight: bold;
+  color: #232323;
+  margin-bottom: 5px;
+}
+
+.testimonial .memInfo {
+  color: #1CB9C8;
+}
+
+.carousel-indicators {
+  position: static;
+  text-align: left;
+  margin: 20px 0px -8px;
+}
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  color: #1CB9C8;
+  
+  border-radius: 50%;
+ 
+}
+
+.carousel-indicators .active {
+  background: #1CB9C8;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.feature-box {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+.service-card {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding-bottom: 5%;
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.service-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.service-title {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 15px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+.service-footer {
+  margin-top: 20px;
+}
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+}
+
+.read-more {
+  color: #1CB9C8;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.read-more:hover {
+  text-decoration:none;
+}
+.skillHead{
+  color: #232323;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: -8px 0px 25px;
+}
+.skillP{
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin:0px 0px 15px;
+}
+.skillButton a {
+  background-color: #1CB9C8;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  border: none;
+
+}
+.skillButton a:active{
+  background-color: #1CB9C8;
+  color: black;
+}
+.team{
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  padding: 100px 0px;
+  background-color: #F4F7FC;
+}
+.teamheading{
+  font: 14px 'Roboto', sans-serif;
+  margin: -5px 0px 60px;
+  margin-bottom: 60px;
+    overflow: hidden;
+    margin-top: -5px;
+}
+.teamHead {
+  font-size: 30px;
+  color: #232323;
+  margin: 0px 0px 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px 0px 20px;
+  
+}
+.teamText {
+  font-size: 14px;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.teamMem {
+  padding-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.teamMem img {
+  width: auto;
+  height: auto;
+  padding: 15px;
+}
+.teamMem h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.socialButtons > li > a {
+  color: #555;
+  font-size: 18px;
+  padding: 10px ;
+}
+.socialButtons > li > a:hover {
+  color: #1CB9C8;
+}
+.socialIcons {
+  text-align: center;
+  margin-top: -50px;
+  padding: 5px;
+  background-color: whitesmoke;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+.contact{
+  padding: 100px 0;
+  position: relative;
+}
+
+.contact-card {
+  background: url('/images/contactImg.jpg') center center / cover no-repeat;
+  padding: 50px;
+  color: #FFF;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
+}
+
+.contact-card h4 {
+  color: #1CB9C8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-card h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact-card .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  border-radius: 0;
+  color: #FFF;
+  box-shadow: none;
+  height: auto;
+  margin-bottom: 20px;
+}
+.btn-send {
+  background-color: #1CB9C8;
+  border: none;
+  color: #FFF;
+  padding: 15px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.contactOverlay{
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: none;
+   margin: none;
+   height: 100%;
+   width: 100%;
+}
+.faq{
+  color: #333333;
+  font: 14px 'Roboto', sans-serif;
+  padding: 0px 15px 0px 35px;
+}
+.question{
+  cursor: pointer;
+  color: #666666;
+  font: 16px 'Montserrat', sans-serif;
+  padding: 20px 0px;
+}
+.answer{
+  color: #333333;
+  font: 14px 'Roboto', sans-serif;
+  padding: 15px 0px 0px;
+  display: none;
+}
+.answerActive{
+  display: block;
+}
+.answerP{
+  color:#666666;
+  margin: 0px 0px 15px;
+}
+.clients {
+  background: rgba(0, 0, 0, 0.5); /* fallback */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('images/Backgroundbanner.jpg') fixed no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.clientImages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.footerTop {
+  background-color: #f7faff;
+  padding: 40px 0;
+}
+
+.footerLogo img {
+  max-height: 50px;
+}
+.formContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formContent h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.subscribeForm {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.subscribeInput {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px 0 0 50px;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+}
+
+.subscribeButton {
+  background-color: #1CB9C8;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.subscribeButton:hover {
+  background-color: #17aab7;
+  color: white;
+}
+.footer {
+  background: #fff;
+  color: #333;
+  padding: 60px 0 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.footer h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.footer-list li i {
+  margin-right: 10px;
+  color: #1CB9C8;
+}
+
+.footer-list a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  color: #1CB9C8;
+}
+
+.text-highlight {
+  color: #1CB9C8;
+  font-size: 18px;
+}
+
+.footer-post {
+  margin-bottom: 15px;
+}
+
+.footer-post p {
+  margin: 0 0 5px;
+  font-size: 13px;
+}
+
+.footer-post small {
+  color: #888;
+  font-size: 12px;
+}
+
+.footer-post a {
+  color: #1CB9C8;
+  text-decoration: none;
+}
+
+.footer-post a:hover {
+  text-decoration: underline;
+}
+
+.footer hr {
+  margin: 30px 0;
+  border-color: #eee;
+}
+
+
+@media (max-width: 780px) {
+  body {
+    height: 100%;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: white; 
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  #mainNavbar {
+    position: fixed;
+    background-color: white;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: black;
+  }
+
+  .navbar-nav > li > div,
+  .navbar-nav > li > div > a {
+    color: black;
+  }
+}

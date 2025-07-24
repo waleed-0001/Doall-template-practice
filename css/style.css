@@ -3,11 +3,10 @@
     background: url('images/Backgroundbanner.jpg') fixed no-repeat;
     background-size: cover;
     position: relative;
-    z-index: -1;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    
+    overflow-x: hidden;
   }
   .loader{
     width: 100%;
@@ -22,27 +21,39 @@
   position: absolute;
   }
 #mainNavbar {
-
+  min-height: 70px;
   background-color: rgba(0, 0, 0, 0.7);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
   position: fixed;
 }
+
 .navbar-collapse {
     max-height: 100vh;
     overflow-y: hidden;
   }
+  .navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
 .navbar-brand img {
   height: 40px;
   width: auto;
   margin: auto;
 }
 
+
 .navbar-nav >li> div{
   padding: 20px 15px;
   font-weight: bold;
   color: white ;
   cursor: pointer;
+}
+.dorpdown-toggle{
+  font: 13px 'Montserrat', sans-serif;
+  padding: 35px 15px;
 }
 
 .dropdown-menu {
@@ -70,6 +81,7 @@ li > div > a:hover {
 .top-banner {
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
+
   z-index: 1;
 }
 
@@ -111,15 +123,17 @@ li > div > a:hover {
 }
 .button {
   background-color: rgba(0, 0, 0, 0.7);
+  font: 14px 'Montserrat', sans-serif;
   color: white;
+  margin: 15px 10px 0px 0px;
   border: 1px solid white;
-  padding: 20px 50px;
+  padding: 10px 40px;
   font-weight: bold;
 }
 .button:hover {
   background-color: white;
   color: black;
-  border: 1px solid black;
+  text-decoration: none;
 }
 .story {
   background-color: white;
@@ -135,7 +149,7 @@ li > div > a:hover {
   color: #1CB9C8;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin: 10px 0px 15px;
 }
 .mainHead {
   color: #232323;
@@ -147,7 +161,7 @@ li > div > a:hover {
 .desc {
   color: #666;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .list {
   list-style: none;
@@ -159,7 +173,7 @@ li > div > a:hover {
   padding: 10px 20px;
   font-weight: bold;
   text-decoration: none;
-  border: 1px solid #1CB9C8;
+  border: 1px solid lightgrey;
 
 }
 .section {
@@ -217,8 +231,7 @@ li > div > a:hover {
 .feature-box {
   background: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px 15px;
-  margin: 15px 0;
+  padding: 40px 30px;
   border-radius: 4px;
 }
 .service-card {
@@ -255,19 +268,23 @@ li > div > a:hover {
 }
 
 .icon-img {
+  color: #1CB9C8;
   width: 50px;
   height: 50px;
 }
 
 .read-more {
-  color: #1CB9C8;
+  color: #666666;
   font-weight: bold;
-  text-decoration: none;
-  font-size: 13px;
+  text-decoration: underline;
+  font: 12px 'Montserrat', sans-serif;
+  margin: 8px 0px 0px;
+  padding: 10px 20px;
 }
 
 .read-more:hover {
   text-decoration:none;
+  color: #1CB9C8;
 }
 .skillHead{
   color: #232323;
@@ -281,20 +298,22 @@ li > div > a:hover {
   font-size: 14px;
   margin:0px 0px 15px;
 }
-.skillButton a {
-  background-color: #1CB9C8;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  padding: 15px 30px;
-  text-decoration: none;
-  border: none;
+ .skillButton .btn {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
 
-}
-.skillButton a:active{
-  background-color: #1CB9C8;
-  color: black;
-}
+  .skillButton .btn.active {
+    background-color: #1CB9C8;
+    color: #fff;
+    border-color: #1CB9C8;
+  }
 .team{
   color: #333333;
   font-family: 'Roboto', sans-serif;
@@ -363,11 +382,40 @@ li > div > a:hover {
 }
 
 .contact-card {
-  background: url('/images/contactImg.jpg') center center / cover no-repeat;
-  padding: 50px;
+   position: relative;
+  padding: 0;
   color: #FFF;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  min-height: 500px;
+  
+}
+.contact-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 500px;
+
+
+}
+.contactOverlay{
+   
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 50px;
+  box-sizing: border-box;
+  z-index: 2;
+  
+}
+.contactOverlay * {
+  
+   position: relative;
+  z-index: 3;
 }
 
 .contact-card h4 {
@@ -393,6 +441,7 @@ li > div > a:hover {
   height: auto;
   margin-bottom: 20px;
 }
+
 .btn-send {
   background-color: #1CB9C8;
   border: none;
@@ -402,13 +451,7 @@ li > div > a:hover {
   text-transform: uppercase;
   margin-top: 10px;
 }
-.contactOverlay{
-   background-color: rgba(0, 0, 0, 0.5);
-   padding: none;
-   margin: none;
-   height: 100%;
-   width: 100%;
-}
+
 .faq{
   color: #333333;
   font: 14px 'Roboto', sans-serif;
@@ -419,6 +462,7 @@ li > div > a:hover {
   color: #666666;
   font: 16px 'Montserrat', sans-serif;
   padding: 20px 0px;
+  border-bottom: 1px solid lightgray;
 }
 .answer{
   color: #333333;
@@ -434,7 +478,7 @@ li > div > a:hover {
   margin: 0px 0px 15px;
 }
 .clients {
-  background: rgba(0, 0, 0, 0.5); /* fallback */
+  background: rgba(0, 0, 0, 0.5); 
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
               url('images/Backgroundbanner.jpg') fixed no-repeat;
   background-size: cover;
@@ -575,34 +619,4 @@ li > div > a:hover {
 .footer hr {
   margin: 30px 0;
   border-color: #eee;
-}
-
-
-@media (max-width: 780px) {
-  body {
-    height: 100%;
-  }
-
-  .navbar-collapse {
-    position: absolute;
-    top: 70px;
-    width: 100%;
-    background-color: white; 
-    z-index: 1000;
-    overflow-y: auto;
-  }
-
-  #mainNavbar {
-    position: fixed;
-    background-color: white;
-  }
-
-  .navbar-toggle .icon-bar {
-    background-color: black;
-  }
-
-  .navbar-nav > li > div,
-  .navbar-nav > li > div > a {
-    color: black;
-  }
 }
